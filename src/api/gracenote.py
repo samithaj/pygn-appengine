@@ -13,7 +13,7 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 # replace client id with yours, if you don't have one
 # you can get yours at https://developer.gracenote.com
-CLIENT_ID = '*******-************************'
+CLIENT_ID = '1668965376-6EA5ED7AC61CDA2F17C508F6166E138F'
 
 # every app has to register and get the user id.
 # to get yours uncomment the code in the Registration class
@@ -32,8 +32,8 @@ class Registration(handlers.ApiBasic):
 		# un comment to get the USER_ID, only run once and save 
 		# the response back to the var on the top
 		# ============================================
-		# user_id = pygn.register(CLIENT_ID)
-		# self.response.write(user_id)
+		 user_id = pygn.register(CLIENT_ID)
+		 self.response.write(user_id)
 		# ============================================
 		self.response("Already registered!")
 
